@@ -8,10 +8,6 @@ import { Employee } from '../../interfaces/employee.interface';
 
 export class OurTeamComponent implements OnInit {
 
-  // AQUIIII SE REFACTORIZÓ CON EL PODER DE ANGULAR
-  // Emplyee es una interfaz que representa los datos de cada empleado
-  // La interfaz se encuentra en app/index/interfaces/employee.interface.ts
-  // Borrar estos comentarios por favor cuando se entienda el concepto de interface para representar datos
   public employees: Employee[] = [
     {
       img_url: 'assets/images/vista/agentes/6.jpg',
@@ -98,11 +94,11 @@ export class OurTeamComponent implements OnInit {
       cellphone: '+57 302 460 1057'
     }
   ];
-  
+
   public slider:any;
   public defaultTransform:any;
 
-  
+
   constructor() { }
 
   ngOnInit(): void {
@@ -111,16 +107,23 @@ export class OurTeamComponent implements OnInit {
   }
 
   goNext() {
-    this.defaultTransform = this.defaultTransform - 398;
+    this.defaultTransform = this.defaultTransform - 319;
     if (Math.abs(this.defaultTransform) >= this.slider.scrollWidth / 1.7) this.defaultTransform = 0;
     this.slider.style.transform = "translateX(" + this.defaultTransform + "px)";
   }
 
   goPrev() {
     if (Math.abs(this.defaultTransform) === 0) this.defaultTransform = 0;
-    else this.defaultTransform = this.defaultTransform + 398;
+    else this.defaultTransform = this.defaultTransform + 319;
     this.slider.style.transform = "translateX(" + this.defaultTransform + "px)";
   }
+  getColWidth(): number {
+    const gridColumns = 6;
+    const totalWidth = window.innerWidth;
+    const columnWidth = totalWidth / gridColumns;
+    return columnWidth;
+  }
+
 
 }
 

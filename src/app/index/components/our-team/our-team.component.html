@@ -28,50 +28,44 @@
                         </li>
                     </ul>
                 </div>
-                <div class="row gallery-grid">
-                    <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
-                        <div class="w-full relative flex items-center justify-center">
-                            <button aria-label="slide backward"
-                                class=" z-30 left-0 mr-8 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 p-4 bg-black hover:bg-gray-800"
-                                (click)="goPrev()">
-                                <svg width="15" height="24" viewBox="0 0 8 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 1L1 7L7 13" stroke="white" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                            <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-                                <div id="slider"
-                                    class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                <div class="slide display:grid grid-template-columns: repeat(6, 1fr)">
+                    <div class="gallery-container grid-column: span 4">
+                        <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+                            <div class="w-full relative flex items-center justify-center">
 
-                                    <!-- AQUIIII SE REFACTORIZÓ CON EL PODER DE ANGULAR -->
-                                    <!-- Borrar este comentario cuando se entienda la directiva *ngFor en Angular -->
-                                    <!-- Porfa tener muuuyyy presente la identacion de los bloques de código -->
-                                    <ng-container *ngFor="let employee of employees">
-                                        <div class="col-lg-3 col-md-6 filter-box genrl-cons mt-4">
-                                            <div class="service-item animate-img mb-md-20">
-                                                <img [src]="employee.img_url" class="image-fit" alt="img">
-                                                <div class="text-wrapper">
-                                                    <h5 class="text-custom-blue no-margin fw-600 fs-20">{{ employee.name
-                                                        }}</h5>
-                                                    <p class="text-custom-white no-margin">{{ employee.role }}</p>
-                                                    <p class="text-custom-white no-margin">{{ employee.cellphone }}</p>
+                                <button
+                                    class="z-30 flex items-center justify-center right-0 mr-8 ml-8 focus:outline-none bg-transparent hover:bg-gray-100 rounded-full p-3">
+                                    <div class="featured-button-prev swiper-button-prev" (click)="goPrev()"><span
+                                            class="flaticon-left"></span></div>
+                                </button>
+
+                                <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                                    <div id="slider"
+                                        class="h-full flex lg:gap-1 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                                        <ng-container *ngFor="let employee of employees">
+                                            <div class="col-lg-3 col-md-6 filter-box genrl-cons mt-4">
+                                                <div class="service-item animate-img mb-md-20">
+                                                    <img [src]="employee.img_url" class="image-fit" alt="img">
+                                                    <div class="text-wrapper">
+                                                        <h5 class="text-custom-blue no-margin fw-600 fs-20">{{
+                                                            employee.name }}</h5>
+                                                        <p class="text-custom-white no-margin">{{ employee.role }}</p>
+                                                        <p class="text-custom-white no-margin">{{ employee.cellphone }}
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </ng-container>
-
+                                        </ng-container>
+                                    </div>
                                 </div>
+
+                                <button
+                                    class="z-30 flex items-center justify-center right-0 mr-8 ml-8 focus:outline-none bg-transparent hover:bg-gray-100 rounded-full p-3">
+                                    <div class="featured-button-next swiper-button-next" (click)="goNext()"><span
+                                            class="flaticon-arrow-1"></span></div>
+                                </button>
+
                             </div>
-                            <button aria-label="slide forward"
-                                class="z-30 right-0 mr-8 ml-8 :outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 p-3 bg-black hover:bg-gray-800"
-                                (click)="goNext()">
-                                <svg width="15" height="24" viewBox="0 0 24 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L23 20L1 39" stroke="white" stroke-width="4" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </button>
                         </div>
                     </div>
                 </div>
