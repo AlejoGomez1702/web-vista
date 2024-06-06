@@ -1,0 +1,4 @@
+#youtube-background-video {
+  pointer-events: none;
+  z-index: -1;
+}

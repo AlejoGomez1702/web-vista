@@ -1,12 +1,22 @@
-<!-- Start Banner -->
 <div class="relative h-screen overflow-hidden">
-  <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted src="https://www.youtube.com/watch?v=HONvPzXaxsM"></video>
-  <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+
+  <ng-container *ngIf="!canShowVideo">
+    <!-- Icono de vista girando -->
+    <h1>Icono de vista girando</h1>
+
+  </ng-container>
+
+  <iframe [ngClass]="{'hidden': !canShowVideo}"
+    height="820"
+    src="https://www.youtube.com/embed/6PYFX7DI14U?autoplay=1"    
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <div class="absolute inset-0 flex items-center justify-center">
     <div class="text-white text-center text-3xl font-bold">
       <h1>Bienvenido</h1>
       <p class="text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
     </div>
   </div>
 </div>
-<!-- End Banner -->
-<!--<div class="absoluto top-0 left-0 w-completo h-completo bg-cover bg-center" style="background-image: url('https://www.youtube.com/watch?v=HONvPzXaxsM');"></div>-->
