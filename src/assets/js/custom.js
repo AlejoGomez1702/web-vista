@@ -13,12 +13,12 @@ Version: 1.0.0
       $('html').addClass('overflow');
     // });
     //fix header
-	  $(window).scroll(function () {
-	    var sticky = $('.menu-style'),
-	      scroll = $(window).scrollTop();
-	    if (scroll >= 100) sticky.addClass('sticky');
-	    else sticky.removeClass('sticky');
-	  });
+	//   $(window).scroll(function () {
+	//     var sticky = $('.menu-style'),
+	//       scroll = $(window).scrollTop();
+	//     if (scroll >= 100) sticky.addClass('sticky');
+	//     else sticky.removeClass('sticky');
+	//   });
   	// navigation
   	$('.menu-item-has-children>a').append('<span class="arrow"></span>');
   	$('.menu-item-has-megamenu>a').append('<span class="arrow"></span>');
@@ -63,23 +63,23 @@ Version: 1.0.0
 		  }
 		  
 	    });
-	    $(window).scroll(function(){
-		    if ($(window).scrollTop() >= 800) {
-		        $('.menu-style').addClass('fixed-header');
-		        $('.topbar').addClass('fixed-top');
-		    }
-		    else {
-		        $('.menu-style').removeClass('fixed-header');
-		        $('.topbar').removeClass('fixed-top');
-		    }
-		    if ($('.menu-style').hasClass('fixed-header')){
-		    	$('body').removeClass('navigation-bottom');
-		    	$('.main-menu li.menu-item-has-children').removeClass('nav-postion');
-			 } else {
-			    $('body').addClass('navigation-bottom');
-			    $('.main-menu li.menu-item-has-children').addClass('nav-postion');
-			 }
-		});
+	    // $(window).scroll(function(){
+		//     if ($(window).scrollTop() >= 800) {
+		//         $('.menu-style').addClass('fixed-header');
+		//         $('.topbar').addClass('fixed-top');
+		//     }
+		//     else {
+		//         $('.menu-style').removeClass('fixed-header');
+		//         $('.topbar').removeClass('fixed-top');
+		//     }
+		//     if ($('.menu-style').hasClass('fixed-header')){
+		//     	$('body').removeClass('navigation-bottom');
+		//     	$('.main-menu li.menu-item-has-children').removeClass('nav-postion');
+		// 	 } else {
+		// 	    $('body').addClass('navigation-bottom');
+		// 	    $('.main-menu li.menu-item-has-children').addClass('nav-postion');
+		// 	 }
+		// });
 
 		}
 	});

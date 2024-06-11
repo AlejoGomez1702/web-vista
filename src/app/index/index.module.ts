@@ -21,6 +21,7 @@ import { AditionalServicesComponent } from './components/aditional-services/adit
 import { OfferYourPropertyComponent } from './components/offer-your-property/offer-your-property.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TopToolbarComponent } from './components/header/top-toolbar/top-toolbar.component';
+import { OldHeaderComponent } from './components/header/old-header/old-header.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { TopToolbarComponent } from './components/header/top-toolbar/top-toolbar
     AditionalServicesComponent,
     OfferYourPropertyComponent,
     FooterComponent,
-    TopToolbarComponent
+    TopToolbarComponent,
+    OldHeaderComponent
   ],
   imports: [
     CommonModule,

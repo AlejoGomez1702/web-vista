@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'black-vista': '#333333',
+        'yellow-vista': '#ffb600'
       },
     },
   },

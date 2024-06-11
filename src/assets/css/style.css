@@ -43,7 +43,7 @@
             left: 125%;
     }
 }
-@keyframes fadeHeaderInDown {
+/* @keyframes fadeHeaderInDown {
     0% {
         opacity: 0;
         transform: translate3d(0, -100%, 0);
@@ -52,7 +52,7 @@
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
-}
+} */
 @keyframes scale {
     50% {
         transform: scale(1.2);
@@ -115,10 +115,10 @@ label {
 .p-relative {
     position: relative;
 }
-.custom-container{
+/* .custom-container{
     padding-right: 100px;
     padding-left: 100px;
-}
+} */
 .before-none:before,
 .after-none:after,
 .none {
