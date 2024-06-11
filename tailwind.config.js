@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'black-vista': '#333333',
+      },
+    },
   },
   plugins: [],
 }
