@@ -1,7 +1,6 @@
 <!-- topbar -->
 <app-top-toolbar></app-top-toolbar>
 
-
 <!-- navigation -->
 <header class="menu-style">
   <div class="container-fluid custom-container">
@@ -29,69 +28,8 @@
                   <li class="menu-item menu-item-has-children">
                     <a class="text-theme fs-14">VENTA</a>
                     <ul class="custom sub-menu">
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/apartaestudio/venta?id_property_type=14&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Apartaestudio</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/apartamento/venta?id_property_type=2&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Apartamento</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/bodega/venta?id_property_type=8&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Bodega</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/cabana/venta?id_property_type=28&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Cabaña</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/casa/venta?id_property_type=1&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Casa</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/casa-campestre/venta?id_property_type=11&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Casa Campestre</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/casa-comercial/venta?id_property_type=27&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Casa Comercial</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/casa-con-renta/venta?id_property_type=29&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme fs-14">Casa con Renta</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/consultorio/venta?id_property_type=15&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Consultorio</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/edificio/venta?id_property_type=16&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Edificio</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/finca/venta?id_property_type=7&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Finca</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/finca-hoteles/venta?id_property_type=13&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Finca - Hoteles</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/hoteles/venta?id_property_type=12&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Hoteles</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/local/venta?id_property_type=3&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Local</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/lote-terreno/venta?id_property_type=5&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Lote - Terreno</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/oficina/venta?id_property_type=4&business_type%5B0%5D=for_sale"
-                          target="_blank" class="text-theme">Oficina</a>
+                      <li class="menu-item" *ngFor="let option of salesOptions">
+                        <a [href]="option.url" target="_blank" class="text-theme">{{ option.name }}</a>
                       </li>
                     </ul>
                   </li>
@@ -100,45 +38,8 @@
                     <a href="https://vistainmobiliaria.inmo.co/s/alquiler" target="_blank"
                       class="text-theme fs-14">ALQUILER</a>
                     <ul class="custom sub-menu">
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/apartaestudio/alquiler?id_property_type=14&business_type%5B0%5D=for_rent"
-                          target="_blank" class="text-theme">Apartaestudio</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/apartamento/alquiler?id_property_type=2&business_type%5B0%5D=for_rent"
-                          target="_blank" class="text-theme">Apartamento</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/bodega/alquiler?id_property_type=8&business_type%5B0%5D=for_rent"
-                          target="_blank" class="text-theme">Bodega</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/casa/alquiler?id_property_type=1&business_type%5B0%5D=for_rent"
-                          target="_blank" class="text-theme">Casa</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/casa-campestre/alquiler?id_property_type=11&business_type%5B0%5D=for_rent"
-                          target="_blank" class="text-theme">Casa Campestre</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/casa-comercial/alquiler?id_property_type=27&business_type%5B0%5D=for_rent"
-                          target="_blank" class="text-theme">Casa Comercial</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/consultorio/alquiler?id_property_type=15&business_type%5B0%5D=for_rent"
-                          target="_blank" class="text-theme">Consultorio</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/edificio/alquiler?id_property_type=16&business_type%5B0%5D=for_rent"
-                          target="_blank" class="text-theme">Edificio</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/local/alquiler?id_property_type=3&business_type%5B0%5D=for_rent"
-                          target="_blank" class="text-theme">Local</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/oficina/alquiler?id_property_type=4&business_type%5B0%5D=for_rent"
-                          target="_blank" class="text-theme">Oficina</a>
+                      <li class="menu-item" *ngFor="let option of rentOptions">
+                        <a [href]="option.url" target="_blank" class="text-theme">{{ option.name }}</a>
                       </li>
                     </ul>
                   </li>
@@ -147,29 +48,8 @@
                     <a href="https://vistainmobiliaria.inmo.co/s/permutar" target="_blank"
                       class="text-theme fs-14">PERMUTAR</a>
                     <ul class="custom sub-menu">
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/apartamento/permutar?id_property_type=2&business_type%5B0%5D=for_transfer"
-                          target="_blank" class="text-theme">Apartamento</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/casa/permutar?id_property_type=1&business_type%5B0%5D=for_transfer"
-                          target="_blank" class="text-theme">Casa</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/casa-campestre/permutar?id_property_type=11&business_type%5B0%5D=for_transfer"
-                          target="_blank" class="text-theme">Casa Campestre</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/casa-comercial/permutar?id_property_type=27&business_type%5B0%5D=for_transfer"
-                          target="_blank" class="text-theme">Casa Comercial</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/finca/permutar?id_property_type=7&business_type%5B0%5D=for_transfer"
-                          target="_blank" class="text-theme">Finca</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="https://vistainmobiliaria.inmo.co/s/lote-terreno/permutar?id_property_type=5&business_type%5B0%5D=for_transfer"
-                          target="_blank" class="text-theme">Lote - terreno</a>
+                      <li class="menu-item" *ngFor="let option of exchangeOptions">
+                        <a [href]="option.url" target="_blank" class="text-theme">{{ option.name }}</a>
                       </li>
                     </ul>
                   </li>
@@ -221,5 +101,3 @@
     </div>
   </div>
 </header>
-<!-- navigation -->
-<!-- End Header -->

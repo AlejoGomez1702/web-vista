@@ -1308,7 +1308,7 @@ label.custom-checkbox .checkmark:after {
     color: #111111;
 } */
 /*Navigation*/
-.menu-style{
+/* .menu-style{
     transition: 1s all;
 }
 .menu-style.sticky{
@@ -1616,7 +1616,7 @@ label.custom-checkbox .checkmark:after {
 }
 .menu-style.sticky .header .right-side-2 .cta-btn .cta-text{
     padding: 7px 0px 7px 15px;
-}
+} */
 /*banner*/
 /*simple-banner*/
 .simple-banner{
