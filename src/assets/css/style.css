@@ -171,7 +171,7 @@ label {
     transition: 0.5s;
 }
 /*preloader*/
-.loader{
+/* .loader{
     overflow: hidden;
 }
 .preloader{
@@ -190,7 +190,7 @@ label {
     right: 0;
     transform: translateY(-50%);
     margin: 0 auto;
-}
+} */
 /*section-header*/
 .section-header{
     max-width: 540px;
@@ -1266,7 +1266,7 @@ label.custom-checkbox .checkmark:after {
     padding: 10px;
 }
 /*topbar*/
-.topbar{
+/* .topbar{
     padding-bottom: 10px;
 }
 .topbar .right-side,
@@ -1306,7 +1306,7 @@ label.custom-checkbox .checkmark:after {
 }
 .topbar .right-side li.language>select>option{
     color: #111111;
-}
+} */
 /*Navigation*/
 .menu-style{
     transition: 1s all;

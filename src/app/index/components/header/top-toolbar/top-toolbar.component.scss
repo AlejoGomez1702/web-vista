@@ -1,0 +1,41 @@
+.topbar{
+    padding-bottom: 10px;
+}
+.topbar .right-side,
+.topbar .left-side{
+    padding: 10px 0 0;
+}
+.topbar .left-side ul{
+    display: flex;
+    align-self: flex-start;
+}
+.topbar .left-side li{
+    margin-right: 20px;
+}
+.topbar .left-side li a{
+    color: #fff;
+}
+.topbar .left-side li a i{
+    margin-right: 5px;
+    color: #fff;
+}
+.topbar .right-side ul{
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+.topbar .right-side li{
+    margin-left: 20px;
+}
+.topbar .right-side li.language{}
+.topbar .right-side li.language>select{
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    -webkit-appearance: none;
+    line-height: 1;
+}
+.topbar .right-side li.language>select>option{
+    color: #111111;
+}

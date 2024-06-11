@@ -20,6 +20,7 @@ import { WorkWithUsComponent } from './pages/work-with-us/work-with-us.component
 import { AditionalServicesComponent } from './components/aditional-services/aditional-services.component';
 import { OfferYourPropertyComponent } from './components/offer-your-property/offer-your-property.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TopToolbarComponent } from './components/header/top-toolbar/top-toolbar.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { FooterComponent } from './components/footer/footer.component';
     WorkWithUsComponent,
     AditionalServicesComponent,
     OfferYourPropertyComponent,
-    FooterComponent
+    FooterComponent,
+    TopToolbarComponent
   ],
   imports: [
     CommonModule,
