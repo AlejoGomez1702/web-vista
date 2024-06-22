@@ -1,36 +1,86 @@
 <!-- topbar -->
 <app-top-toolbar></app-top-toolbar>
 
-<!-- <app-old-header></app-old-header> -->
+<!-- <app-old-header></app-old-header>
 
 <header class="bg-white h-20">
-
-    <div class="flex justify-around">
-        <div class="z-10">
-            <img src="assets/images/vista/logo-vista.png" alt="Logo">
-        </div>
-
-        <div>
-            <ul class="flex py-8 gap-4">
-                <li class="text-base font-medium cursor-pointer">INICIO</li>
-                <li class="flex text-base font-medium cursor-pointer hover:text-yellow-vista hover:border-b-4 hover:border-yellow-vista transition-all duration-500">
-                    VENTA
+    <div class="flex justify-around items-stretch">
+        <div class="flex justify-around items-stretch w-full">
+            <div class="z-10">
+                <img class="basis-1/2" src="assets/images/vista/logo-vista.png" alt="Logo">
+            </div>
+            <div>
+                <ul class="flex py-8 gap-8">
+                    <li class="text-base font-medium cursor-pointer text-yellow-vista border-b-4 border-yellow-vista">INICIO</li>
+                    <li class="flex text-base font-medium cursor-pointer hover:border-b-4 hover:border-yellow-vista transition-all duration-500">
+                        VENTA
+                        <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                        </svg>
+                    </li>
+                    <li class="flex text-base font-medium cursor-pointer hover:border-b-4 hover:border-yellow-vista transition-all duration-500">
+                      ALQUILAR
+                      <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                      </svg>
+                    </li>
+                    <li class="flex text-base font-medium cursor-pointer hover:border-b-4 hover:border-yellow-vista transition-all duration-500">
+                      PERMUTAR
                     <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
                     </svg>
-                </li>
-                <li class="text-base font-medium cursor-pointer">ALQUILER</li>
-                <li class="text-base font-medium cursor-pointer">PERMUTAR</li>
-                <li class="text-base font-medium cursor-pointer">BLOG</li>
-                <li class="text-base font-medium cursor-pointer">QUIÉNES SOMOS</li>
-                <li class="text-base font-medium cursor-pointer">CONTÁCTENOS</li>
-            </ul>
+                    </li>
+                    <li class="text-base font-medium cursor-pointer hover:text-yellow-vista hover:border-b-4 hover:border-yellow-vista transition-all duration-500">BLOG</li>
+                    <li class="text-base font-medium cursor-pointer hover:text-yellow-vista hover:border-b-4 hover:border-yellow-vista transition-all duration-500">QUIÉNES SOMOS</li>
+                    <li class="text-base font-medium cursor-pointer hover:text-yellow-vista hover:border-b-4 hover:border-yellow-vista transition-all duration-500">CONTÁCTENOS</li>
+                </ul>
+            </div>
         </div>
-
-        <div class="bg-yellow-vista">
-            Botno
+        <div class="bg-yellow-vista pl-4 pr-20">
+              <div class="p-4 bg-yellow-vista text-white text-center mt-3 mb-30 hover:bg-white hover:text-black border border-white">
+                  BUSCAR INMUEBLE
+              </div>
         </div>
     </div>
-    
+</header>-->
 
+<header class="bg-white h-20">
+    <div class="flex justify-between items-stretch">
+        <div class="flex justify-around items-stretch w-full">
+            <div class="z-10 ml-10">
+                <img class="basis-1/2" src="assets/images/vista/logo-vista.png" alt="Logo">
+            </div>
+            <div>
+                <ul class="flex py-6 gap-8">
+                    <li class="text-sm font-medium cursor-pointer text-yellow-vista border-b-4 border-yellow-vista">INICIO</li>
+                    <li class="flex text-sm font-medium cursor-pointer hover:border-b-4 hover:border-yellow-vista transition-all duration-500">
+                        VENTA
+                        <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                        </svg>
+                    </li>
+                    <li class="flex text-sm font-medium cursor-pointer hover:border-b-4 hover:border-yellow-vista transition-all duration-500">
+                      ALQUILAR
+                      <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                      </svg>
+                    </li>
+                    <li class="flex text-sm font-medium cursor-pointer hover:border-b-4 hover:border-yellow-vista transition-all duration-500">
+                      PERMUTAR
+                    <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                    </svg>
+                    </li>
+                    <li class="text-sm font-medium cursor-pointer hover:text-yellow-vista hover:border-b-4 hover:border-yellow-vista transition-all duration-500">BLOG</li>
+                    <li class="text-sm font-medium cursor-pointer hover:text-yellow-vista hover:border-b-4 hover:border-yellow-vista transition-all duration-500">QUIÉNES SOMOS</li>
+                    <li class="text-sm font-medium cursor-pointer hover:text-yellow-vista hover:border-b-4 hover:border-yellow-vista transition-all duration-500 mb-5">CONTÁCTENOS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="basis-1/4 bg-yellow-vista pl-4 pr-20 border pb-0 border-white">
+            <div class="p-4 mt-3 bg-yellow-vista text-white text-center text-sm hover:bg-white hover:text-black border-2 border-white ">
+                BUSCAR INMUEBLE
+            </div>
+        </div>
+    </div>
 </header>
