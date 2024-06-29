@@ -22,6 +22,7 @@ import { OfferYourPropertyComponent } from './components/offer-your-property/off
 import { FooterComponent } from './components/footer/footer.component';
 import { TopToolbarComponent } from './components/header/top-toolbar/top-toolbar.component';
 import { OldHeaderComponent } from './components/header/old-header/old-header.component';
+import { HamburguerMenuComponent } from './components/header/hamburguer-menu/hamburguer-menu.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { OldHeaderComponent } from './components/header/old-header/old-header.co
     OfferYourPropertyComponent,
     FooterComponent,
     TopToolbarComponent,
-    OldHeaderComponent
+    OldHeaderComponent,
+    HamburguerMenuComponent
   ],
   imports: [
     CommonModule,
