@@ -1,3 +1,14 @@
 .z-1000 {
     z-index: 1000;
 }
+.dropdown-menu li {
+  color: black;/* Cambia el color del texto a negro */
+}
+.dropdown-menu li:hover {
+  color: #ffb600;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0; /* O cualquier otro color de fondo que prefieras */
+}
+

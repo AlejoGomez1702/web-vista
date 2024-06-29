@@ -11,25 +11,27 @@
 
   <iframe [ngClass]="{'hidden':!canShowVideo}"
     height="820"
-    src="https://www.youtube.com/embed/6PYFX7DI14U?autoplay=1&mute=1&playlist=6PYFX7DI14U"
+    src="https://www.youtube.com/embed/6PYFX7DI14U?autoplay=1&mute=1&loop=1&playlist=6PYFX7DI14U"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
 
+
   <div *ngIf="canShowVideo" class="absolute inset-0 flex items-center justify-center">
-    <button (click)="prevText()" class="z-30 flex items-center justify-center right-0 mr-8 ml-8 focus:outline-none bg-transparent hover:bg-gray-100 rounded-full p-3">
+    <button (click)="prevText()" class="z-30 flex items-center justify-center right-0 mr-8 ml-8">
       <div class="featured-button-prev swiper-button-prev"><span class="flaticon-left"></span></div>
     </button>
-    <div class="text-white text-center text-3xl font-bold" [ngClass]="{
-      'opacity-100': currentIndex === nextIndex,
-      'opacity-0': currentIndex!== nextIndex
-    }">
-      <h1>{{texts[currentIndex]}}</h1>
+    <div *ngIf="texts[currentIndex]">
+      <h1 [ngStyle]="texts[currentIndex].styles.header">{{ texts[currentIndex].header }}</h1>
+      <h2 [ngStyle]="texts[currentIndex].styles.subheader">{{ texts[currentIndex].subheader }}</h2>
     </div>
-    <button (click)="nextText()" class="z-30 flex items-center justify-center right-0 mr-8 ml-8 focus:outline-none bg-transparent hover:bg-gray-100 rounded-full p-3">
+    <button (click)="nextText()" class="z-30 flex items-center justify-center right-0 mr-8 ml-8">
       <div class="featured-button-next swiper-button-next"><span class="flaticon-arrow-1"></span></div>
     </button>
   </div>
 
 </div>
+<!--<div class="featured-button-next swiper-button-next w-10 h-10">
+  <span>CONTÁCTENOS</span>
+</div>-->

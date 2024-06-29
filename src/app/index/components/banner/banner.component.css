@@ -2,3 +2,20 @@
   pointer-events: none;
   z-index: -1;
 }
+.featured-button-next span {
+  color: white; /* Color del texto blanco */
+}
+.featured-button-next {
+  padding: 10px 20px; /* Ajusta el espacio interno del botón según sea necesario */
+  text-align: center; /* Alinea el texto al centro */
+  width: fit-content; /* Ancho ajustado al contenido */
+  height: fit-content; /* Altura ajustada al contenido */
+  color: white; /* Color del texto blanco */
+  border-radius: 5px; /* Borde redondeado */
+  display: inline-block; /* Mostrar como bloque en línea */
+}
+
+.featured-button-next span {
+  display: block; /* Mostrar el texto como bloque para gestionar el padding */
+  padding: 5px; /* Espacio interno del texto */
+}
