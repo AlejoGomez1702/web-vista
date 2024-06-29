@@ -22,16 +22,28 @@
     <button (click)="prevText()" class="z-30 flex items-center justify-center right-0 mr-8 ml-8">
       <div class="featured-button-prev swiper-button-prev"><span class="flaticon-left"></span></div>
     </button>
-    <div *ngIf="texts[currentIndex]">
+    <div *ngIf="texts[currentIndex]" class="slide-in-from-right">
       <h1 [ngStyle]="texts[currentIndex].styles.header">{{ texts[currentIndex].header }}</h1>
-      <h2 [ngStyle]="texts[currentIndex].styles.subheader">{{ texts[currentIndex].subheader }}</h2>
+      <h1 [ngStyle]="texts[currentIndex].styles.footheader">{{ texts[currentIndex].footheader }}</h1>
+      <h1 [ngStyle]="texts[currentIndex].styles.sth">{{ texts[currentIndex].sth }}</h1>
+      <h2 [ngStyle]="texts[currentIndex].styles.subheader">
+        <span *ngIf="hasSolidez(texts[currentIndex].subheader)" [ngStyle]="{color: '#ffb600'}">Solidez,</span>
+        <span>{{ texts[currentIndex].subheader.split(', ')[1] }}</span>
+      </h2>
+      <h2 [ngStyle]="texts[currentIndex].styles.paragraph">{{ texts[currentIndex].paragraph }}</h2>
     </div>
     <button (click)="nextText()" class="z-30 flex items-center justify-center right-0 mr-8 ml-8">
       <div class="featured-button-next swiper-button-next"><span class="flaticon-arrow-1"></span></div>
     </button>
   </div>
 
+
 </div>
 <!--<div class="featured-button-next swiper-button-next w-10 h-10">
   <span>CONTÁCTENOS</span>
-</div>-->
+</div>
+
+<a href="https://vistainmobiliaria.inmo.co/blog" target="_blank" class="btn-first btn-border ml-1">Blog</a>
+    <a href="https://vistainmobiliaria.inmo.co/main-contactenos.htm" target="_blank" class="btn-first btn-submit text-custom-white mr-1">Contáctenos</a>
+
+-->
