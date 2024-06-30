@@ -7,10 +7,26 @@ import { Component, output } from '@angular/core';
 })
 export class HamburguerMenuComponent {
 
-  onCloseMenu = output<void>();
+  public onCloseMenu = output<void>();
+
+  public saleOptions: boolean = false;
+  public saleOptionsList = [
+    { name: 'Apartaestudio', link: '/' },
+    { name: 'Apartamento', link: '/' },
+    { name: 'Bodega', link: '/' },
+    { name: 'Cabaña', link: '/' },
+    { name: 'Casa', link: '/' },
+    { name: 'Casa Campestre', link: '/' },
+    { name: 'Casa Comercial', link: '/' },
+    { name: 'Casa con Renta', link: '/' },
+  ];
 
   toggleMenu() {
     this.onCloseMenu.emit();
+  }
+
+  toggleSaleOptions() {
+    this.saleOptions = !this.saleOptions;
   }
 
 }

@@ -23,6 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TopToolbarComponent } from './components/header/top-toolbar/top-toolbar.component';
 import { OldHeaderComponent } from './components/header/old-header/old-header.component';
 import { HamburguerMenuComponent } from './components/header/hamburguer-menu/hamburguer-menu.component';
+import { HeaderDesktopComponent } from './components/header/header-desktop/header-desktop.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { HamburguerMenuComponent } from './components/header/hamburguer-menu/ham
     FooterComponent,
     TopToolbarComponent,
     OldHeaderComponent,
-    HamburguerMenuComponent
+    HamburguerMenuComponent,
+    HeaderDesktopComponent
   ],
   imports: [
     CommonModule,
