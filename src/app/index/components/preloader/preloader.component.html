@@ -1,3 +1,5 @@
-<div [ngClass]="{'bg-yellow-500 h-screen w-full fixed top-0 z-50 overflow-hidden': showPreloader}">
-    <img src="assets/images/pre-loader-1.svg" alt="img" class="absolute top-1/2 left-0 right-0 transform -translate-y-1/2 mx-auto">
-</div>
+<ng-container *ngIf="showPreloader">
+    <div [ngClass]="{'bg-yellow-500 h-screen w-full fixed top-0 z-50 overflow-hidden': showPreloader}">
+        <img src="assets/images/pre-loader-1.svg" alt="img" class="absolute top-1/2 left-0 right-0 transform -translate-y-1/2 mx-auto">
+    </div>
+</ng-container>
