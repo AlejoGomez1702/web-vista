@@ -9,6 +9,9 @@ module.exports = {
         'black-vista': '#333333',
         'yellow-vista': '#ffb600'
       },
+      borderRadius: {
+        't-vista': '7rem 7rem 0 0'
+      }
     },
   },
   plugins: [],
