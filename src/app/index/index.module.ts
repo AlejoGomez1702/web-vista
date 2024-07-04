@@ -24,6 +24,7 @@ import { TopToolbarComponent } from './components/header/top-toolbar/top-toolbar
 import { OldHeaderComponent } from './components/header/old-header/old-header.component';
 import { HamburguerMenuComponent } from './components/header/hamburguer-menu/hamburguer-menu.component';
 import { HeaderDesktopComponent } from './components/header/header-desktop/header-desktop.component';
+import { QuickOptionsComponent } from './components/quick-options/quick-options.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { HeaderDesktopComponent } from './components/header/header-desktop/heade
     TopToolbarComponent,
     OldHeaderComponent,
     HamburguerMenuComponent,
-    HeaderDesktopComponent
+    HeaderDesktopComponent,
+    QuickOptionsComponent
   ],
   imports: [
     CommonModule,
