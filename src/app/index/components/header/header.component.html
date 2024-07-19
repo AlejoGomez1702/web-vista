@@ -1,5 +1,5 @@
 <!-- Menu Hamburguesa -->
-<div [ngClass]="{ 'translate-x-0': isMenuOpen, '-translate-x-full': !isMenuOpen }" class="bg-white fixed z-50 top-0 left-0 w-11/12 h-screen transform transition-transform duration-500" [attr.aria-hidden]="!isMenuOpen">
+<div [ngClass]="{ 'translate-x-0': isMenuOpen, '-translate-x-full': !isMenuOpen }" class="bg-white fixed z-50 top-0 left-0 w-full h-screen transform transition-transform duration-500" [attr.aria-hidden]="!isMenuOpen">
     <app-hamburguer-menu (onCloseMenu)="toggleMenu()" />
 </div>
 
