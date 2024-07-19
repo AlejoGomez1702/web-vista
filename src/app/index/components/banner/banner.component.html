@@ -1,7 +1,7 @@
 <div class="relative h-screen overflow-hidden">
 
   <ng-container *ngIf="!canShowVideo">
-    <!-- Icono de vista girando -->
+
     <div class="flex justify-center items-center min-h-screen bg-black">
       <div class="relative w-20 h-20">
         <img src="assets/images/icon.ico" alt="Logo" class="absolute inset-0 w-full h-full object-cover transform rotate-180 animate-spin infinite">
@@ -18,7 +18,7 @@
   </iframe>
 
 
-  <div *ngIf="canShowVideo" class="absolute inset-0 flex items-center justify-center">
+  <div *ngIf="canShowVideo" class="absolute inset-0 flex items-center justify-center pb-30">
     <button (click)="prevText()" class="z-30 flex items-center justify-center right-0 mr-8 ml-8">
       <div class="featured-button-prev swiper-button-prev"><span class="flaticon-left"></span></div>
     </button>
@@ -31,19 +31,20 @@
         <span>{{ texts[currentIndex].subheader.split(', ')[1] }}</span>
       </h2>
       <h2 [ngStyle]="texts[currentIndex].styles.paragraph">{{ texts[currentIndex].paragraph }}</h2>
+      <div class="flex justify-center items-center h-full mt-6">
+        <a href="https://vistainmobiliaria.inmo.co/main-contactenos.htm" target="_blank" class="btn-first btn-submit text-custom-white mr-5">Contáctenos</a>
+        <a href="https://vistainmobiliaria.inmo.co/blog" target="_blank" class="btn-first btn-border ml-5">Blog</a>
+      </div>
     </div>
     <button (click)="nextText()" class="z-30 flex items-center justify-center right-0 mr-8 ml-8">
       <div class="featured-button-next swiper-button-next"><span class="flaticon-arrow-1"></span></div>
     </button>
   </div>
 
-
 </div>
-<!--<div class="featured-button-next swiper-button-next w-10 h-10">
-  <span>CONTÁCTENOS</span>
-</div>
+<!--
 
 <a href="https://vistainmobiliaria.inmo.co/blog" target="_blank" class="btn-first btn-border ml-1">Blog</a>
-    <a href="https://vistainmobiliaria.inmo.co/main-contactenos.htm" target="_blank" class="btn-first btn-submit text-custom-white mr-1">Contáctenos</a>
+<a href="https://vistainmobiliaria.inmo.co/main-contactenos.htm" target="_blank" class="btn-first btn-submit text-custom-white mr-1">Contáctenos</a>
 
 -->

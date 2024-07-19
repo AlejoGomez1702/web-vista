@@ -130,20 +130,17 @@ export class BannerComponent implements OnInit {
 
   applyAnimation(direction: 'right' | 'left', from: 'right' | 'left') {
     const element = document.querySelector('.slide-in-from-' + direction) as HTMLElement;
-    if (!element) {
-      console.warn(`Elemento no encontrado con el selector.slide-in-from-${direction}`);
-      return;
-    }
     element.classList.remove('slide-in-from-' + direction);
+
     setTimeout(() => {
-      if (from === 'right') {
-        element.style.transform = 'translateX(100%)'; // Preparar para la animación desde la derecha
-      } else {
-        element.style.transform = 'translateX(-100%)'; // Preparar para la animación desde la izquierda
-      }
-      element.classList.add('slide-in-from-' + direction);
-    }, 50); // Un pequeño retraso para asegurar que la animación se aplique correctamente
-  }
+        const transformMap = {
+            'right': 'translateX(100%)',
+            'left': 'translateX(-100%)'
+        };
+        element.style.transform = transformMap[from];
+        element.classList.add('slide-in-from-' + direction);
+    }, 5);
+}
 
 
   autoChange() {
@@ -151,7 +148,6 @@ export class BannerComponent implements OnInit {
       this.autoChangeSubscription.unsubscribe();
     }
     this.autoChangeSubscription = interval(this.delayTime).pipe(
-      takeWhile(() => this.isReadyToAutoChange), // Continuar hasta que isReadyToAutoChange sea falso
       switchMap(() => this.nextText())
     ).subscribe();
   }
