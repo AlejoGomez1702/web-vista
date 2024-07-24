@@ -117,31 +117,13 @@ export class BannerComponent implements OnInit {
     this.nextIndex = (this.currentIndex < this.texts.length - 1? this.currentIndex + 1 : 0);
     await new Promise(resolve => setTimeout(resolve, this.delayTime));
     this.currentIndex = this.nextIndex;
-    this.applyAnimation('right', 'right'); // Muestra el próximo texto desde la derecha hacia la izquierda
   }
 
   async prevText() {
     this.nextIndex = (this.currentIndex > 0? this.currentIndex - 1 : this.texts.length - 1);
     await new Promise(resolve => setTimeout(resolve, this.delayTime));
     this.currentIndex = this.nextIndex;
-    this.applyAnimation('left', 'left'); // Muestra el texto anterior desde la izquierda hacia la derecha
   }
-
-
-  applyAnimation(direction: 'right' | 'left', from: 'right' | 'left') {
-    const element = document.querySelector('.slide-in-from-' + direction) as HTMLElement;
-    element.classList.remove('slide-in-from-' + direction);
-
-    setTimeout(() => {
-        const transformMap = {
-            'right': 'translateX(100%)',
-            'left': 'translateX(-100%)'
-        };
-        element.style.transform = transformMap[from];
-        element.classList.add('slide-in-from-' + direction);
-    }, 5);
-}
-
 
   autoChange() {
     if (this.autoChangeSubscription) {
@@ -156,4 +138,7 @@ export class BannerComponent implements OnInit {
   hasSolidez(text: string): boolean {
     return text.includes('Solidez');
   }
+
 }
+
+
