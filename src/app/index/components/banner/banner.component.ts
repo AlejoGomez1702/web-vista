@@ -97,7 +97,7 @@ export class BannerComponent implements OnInit {
       }
     }
   ];
-  delayTime = 360; // Tiempo de espera antes de cambiar automáticamente
+  delayTime = 360;
   autoChangeSubscription: Subscription | null = null;
   canShowVideo: boolean = false;
   isReadyToAutoChange: boolean = false;
@@ -109,34 +109,50 @@ export class BannerComponent implements OnInit {
     setTimeout(() => {
       this.canShowVideo = true;
       this.isReadyToAutoChange = true;
+      this.startAutoSlide();
     }, 5000);
-  }
-
-
-  async nextText() {
-    this.nextIndex = (this.currentIndex < this.texts.length - 1? this.currentIndex + 1 : 0);
-    await new Promise(resolve => setTimeout(resolve, this.delayTime));
-    this.currentIndex = this.nextIndex;
-  }
-
-  async prevText() {
-    this.nextIndex = (this.currentIndex > 0? this.currentIndex - 1 : this.texts.length - 1);
-    await new Promise(resolve => setTimeout(resolve, this.delayTime));
-    this.currentIndex = this.nextIndex;
-  }
-
-  autoChange() {
-    if (this.autoChangeSubscription) {
-      this.autoChangeSubscription.unsubscribe();
-    }
-    this.autoChangeSubscription = interval(this.delayTime).pipe(
-      switchMap(() => this.nextText())
-    ).subscribe();
   }
 
 
   hasSolidez(text: string): boolean {
     return text.includes('Solidez');
+  }
+  animationClass = 'slide-in-from-right';
+  intervalId: any;
+
+
+  ngOnDestroy() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
+
+  startAutoSlide() {
+    this.intervalId = setInterval(() => {
+      this.nextText(true);
+    }, 7000);
+  }
+
+  nextText(isAuto = false) {
+    this.animationClass = 'slide-out-to-left';
+    setTimeout(() => {
+      this.currentIndex = (this.currentIndex + 1) % this.texts.length;
+      this.animationClass = 'slide-in-from-right';
+      if (!isAuto) {
+        clearInterval(this.intervalId);
+        this.startAutoSlide();
+      }
+    }, 1000);
+  }
+
+  prevText() {
+    this.animationClass = 'slide-out-to-right';
+    setTimeout(() => {
+      this.currentIndex = (this.currentIndex - 1 + this.texts.length) % this.texts.length;
+      this.animationClass = 'slide-in-from-left';
+      clearInterval(this.intervalId);
+      this.startAutoSlide();
+    }, 1000);
   }
 
 }

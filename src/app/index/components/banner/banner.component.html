@@ -20,14 +20,15 @@
 
 
   <div *ngIf="canShowVideo" class="absolute inset-0 flex items-center justify-center pb-30">
-    <button (click)="nextText()" class="z-30 absolute inset-y-0 flex items-center justify-center left-0 mr-8 ml-8">
+    <button (click)="prevText()" class="z-30 absolute inset-y-0 flex items-center justify-center left-0 mr-8 ml-8">
       <div class="boton-transicion-l inline-block text-sm px-5 py-3 font-bold shadow-md ml-1 border-2 border-yellow-vista border-r-[20px]">
         <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
         </svg>
       </div>
     </button>
-    <div *ngIf="texts[currentIndex]" class="slide-in-from-right">
+
+    <div *ngIf="texts[currentIndex]" [ngClass]="animationClass">
       <h1 [ngStyle]="texts[currentIndex].styles.header">{{ texts[currentIndex].header }}</h1>
       <h1 [ngStyle]="texts[currentIndex].styles.footheader">{{ texts[currentIndex].footheader }}</h1>
       <h1 [ngStyle]="texts[currentIndex].styles.sth">{{ texts[currentIndex].sth }}</h1>
@@ -45,15 +46,16 @@
         </a>
       </div>
     </div>
-    <button (click)="nextText()" class="z-30 absolute inset-y-0 flex items-center justify-center right-0 mr-8 ml-8">
 
+    <button (click)="nextText()" class="z-30 absolute inset-y-0 flex items-center justify-center right-0 mr-8 ml-8">
       <div class="boton-transicion-r inline-block text-sm px-5 py-3 font-bold shadow-md ml-1 border-2 border-yellow-vista border-l-[20px]">
         <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 12H5m14 0-4 4m4-4-4-4"/>
         </svg>
       </div>
-
     </button>
   </div>
+
+
+
 </div>
-x
