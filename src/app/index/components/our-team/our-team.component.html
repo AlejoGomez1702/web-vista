@@ -1,75 +1,68 @@
-<section class="section-padding our-services">
-    <div class="container">
-        <div class="section-header">
-            <div class="section-heading">
-                <h5 class="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Nuestro Equipo
-                </h5>
-                <h3 class="text-theme fw-700">Conoce y Contacta a Nuestros Agentes Inmobiliarios</h3>
+<!-- Offer Your Property -->
+<section class="py-16 relative">
+    <div class="absolute inset-0"></div>
+    <div class="container mx-auto relative z-10">
+        <div class="text-center mb-8">
+            <div>
+                <h5 class="text-yellow-vista text-lg font-bold">NUESTRO EQUIPO</h5>
+                <h3 class="text-black font-bold text-3xl">Conoce y Contacta a Nuestros Agentes Inmobiliarios</h3>
+            </div>
+            <hr class="border-yellow-vista my-4 mx-auto w-2/12">            
+            <div>
+                <p class="text-white mt-4 px-56">Con este formulario buscamos acercar a Vista Inmobiliaria a un mercado competitivo, conservando los valores coorporativos de la misma empresa, y respetando los derechos y deberes de nuestros clientes.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="filter-gallery custom-tabs mb-xl-40">
-                    <ul class="custom">
-                        <li class="active" data-filter="*">
-                            <a href="#" class="text-custom-black">Todos</a>
-                        </li>
-                        <li data-filter=".h-main">
-                            <a href="#" class="text-custom-black">Agentes de Arrendamiento</a>
-                        </li>
-                        <li data-filter=".genrl-cons">
-                            <a href="#" class="text-custom-black">Agentes de Ventas</a>
-                        </li>
-                        <li data-filter=".restructured">
-                            <a href="#" class="text-custom-black">Mercadeo y Captaciones</a>
-                        </li>
-                        <li data-filter=".pro-manage">
-                            <a href="#" class="text-custom-black">Administrativos</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="slide display:grid grid-template-columns: repeat(6, 1fr)">
-                    <div class="gallery-container grid-column: span 4">
-                        <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
-                            <div class="w-full relative flex items-center justify-center">
-
-                                <button
-                                    class="z-30 flex items-center justify-center right-0 mr-8 ml-8 focus:outline-none bg-transparent hover:bg-gray-100 rounded-full p-3">
-                                    <div class="featured-button-prev swiper-button-prev" (click)="goPrev()"><span
-                                            class="flaticon-left"></span></div>
-                                </button>
-
-                                <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-                                    <div id="slider"
-                                        class="h-full flex lg:gap-1 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
-                                        <ng-container *ngFor="let employee of employees">
-                                            <div class="col-lg-3 col-md-6 filter-box genrl-cons mt-4">
-                                                <div class="service-item animate-img mb-md-20">
-                                                    <img [src]="employee.img_url" class="image-fit" alt="img">
-                                                    <div class="text-wrapper">
-                                                        <h5 class="text-custom-blue no-margin fw-600 fs-20">{{
-                                                            employee.name }}</h5>
-                                                        <p class="text-custom-white no-margin">{{ employee.role }}</p>
-                                                        <p class="text-custom-white no-margin">{{ employee.cellphone }}
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </ng-container>
-                                    </div>
-                                </div>
-
-                                <button
-                                    class="z-30 flex items-center justify-center right-0 mr-8 ml-8 focus:outline-none bg-transparent hover:bg-gray-100 rounded-full p-3">
-                                    <div class="featured-button-next swiper-button-next" (click)="goNext()"><span
-                                            class="flaticon-arrow-1"></span></div>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="flex mx-12 gap-6">
+            <button class="bg-yellow-vista w-2/12">
+                1
+            </button>
+            <button class="bg-yellow-vista w-2/12">
+                1
+            </button>
+            <button class="bg-yellow-vista w-2/12">
+                1
+            </button>
+            <button class="bg-yellow-vista w-2/12">
+                1
+            </button>
+            <button class="bg-yellow-vista w-2/12">
+                1
+            </button>
         </div>
+
+        <div class="relative">
+          <!-- Left Arrow -->
+          <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
+            &#9664;
+          </button>
+        
+          <!-- Carousel Container -->
+          <div class="flex overflow-x-hidden scroll-smooth">
+            <!-- Carousel Items -->
+            <div class="w-1/4 flex-shrink-0 p-4">
+              <img src="https://placehold.co/400" alt="Image 1" class="w-full h-auto">
+            </div>
+            <div class="w-1/4 flex-shrink-0 p-4">
+              <img src="https://placehold.co/400" alt="Image 2" class="w-full h-auto">
+            </div>
+            <div class="w-1/4 flex-shrink-0 p-4">
+              <img src="https://placehold.co/400" alt="Image 3" class="w-full h-auto">
+            </div>
+            <div class="w-1/4 flex-shrink-0 p-4">
+              <img src="https://placehold.co/400" alt="Image 4" class="w-full h-auto">
+            </div>
+            <div class="w-1/4 flex-shrink-0 p-4">
+              <img src="https://placehold.co/400" alt="Image 5" class="w-full h-auto">
+            </div>
+            <!-- Add more items as needed -->
+          </div>
+        
+          <!-- Right Arrow -->
+          <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
+            &#9654;
+          </button>
+        </div>
+
     </div>
 </section>
+<!-- Offer Your Property -->

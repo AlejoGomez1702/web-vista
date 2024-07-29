@@ -1,46 +1,47 @@
 <!-- Offer Your Property -->
-<section class="section-padding bg-call-to-action">
-    <div class="overlay overlay-bg"></div>
-    <div class="container">
-        <div class="section-header">
-            <div class="section-heading">
-                <h5 class="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Plan Referidos</h5>
-                <h3 class="text-custom-white fw-700">Oferta tu inmueble con nosotros</h3>
+<section class="py-16 bg-blue-500 relative">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="container mx-auto relative z-10">
+        <div class="text-center mb-8">
+            <div>
+                <h5 class="text-yellow-vista text-lg font-bold">PLAN REFERIDOS</h5>
+                <h3 class="text-white font-bold text-3xl">Oferta tu inmueble con nosotros</h3>
             </div>
-            <div class="section-description">
-                <p class="text-custom-white">Con este formulario buscamos acercar a Vista Inmobiliaria a un mercado competitivo, conservando los valores coorporativos de la misma empresa, y respetando los derechos y deberes de nuestros clientes.</p>
+            <hr class="border-yellow-vista my-4 mx-auto w-2/12">            
+            <div>
+                <p class="text-white mt-4 px-56">Con este formulario buscamos acercar a Vista Inmobiliaria a un mercado competitivo, conservando los valores coorporativos de la misma empresa, y respetando los derechos y deberes de nuestros clientes.</p>
             </div>
         </div>
-        <form class="row consult-form" action="https://formspree.io/f/xyyljanv" method="POST">
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="form-group">
-                    <input type="text" name="#" class="form-control form-control-custom" placeholder="Nombre">
+        <form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-28" action="https://formspree.io/f/xyyljanv" method="POST">
+            <div>
+                <div class="mb-4">
+                    <input type="text" name="nombre" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Nombre">
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="form-group">
-                    <input type="email" name="#" class="form-control form-control-custom" placeholder="Correo Electrónico">
+            <div>
+                <div class="mb-4">
+                    <input type="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Correo Electrónico">
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="form-group">
-                    <input type="text" name="#" class="form-control form-control-custom" placeholder="Número Telefónico">
+            <div>
+                <div class="mb-4">
+                    <input type="text" name="telefono" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Número Telefónico">
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="form-group">
-                    <select class="form-control form-control-custom custom-select">
+            <div>
+                <div class="mb-4">
+                    <select class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
                         <option>Seleccione su ciudad</option>
                         <option>Manizales</option>
                         <option>Pereira</option>
-                        <option>Bogota</option>
+                        <option>Bogotá</option>
                         <option>Medellín</option>                            
                     </select>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="form-group">
-                    <select class="form-control form-control-custom custom-select">
+            <div>
+                <div class="mb-4">
+                    <select class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
                         <option>Tipo de Negocio</option>
                         <option>Arrendamiento</option>
                         <option>Venta</option>
@@ -48,9 +49,9 @@
                     </select>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="form-group">
-                    <button type="submit" class="btn-first btn-submit full-width btn-height">Enviar</button>
+            <div>
+                <div class="mb-4">
+                    <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Enviar</button>
                 </div>
             </div>
         </form>
