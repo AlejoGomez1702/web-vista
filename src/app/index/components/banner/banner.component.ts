@@ -12,7 +12,7 @@ export class BannerComponent implements OnInit {
   nextIndex = 0;
   texts = [
     {
-      header: 'En Servicio Somos:',
+      header: 'En servicio somos:',
       footheader: 'Rápidos, Atentos Y Profesionales',
       sth: '#lavidamasfacil',
       subheader: '',
@@ -49,7 +49,7 @@ export class BannerComponent implements OnInit {
     },
 
     {
-      header: 'Nuestra Imagen Refleja',
+      header: 'Nuestra imagen refleja:',
       subheader: 'Solidez,  Modernismo  Y  Foco',
       paragraph: 'Conócenos, te invitamos a vivir una historia + un café',
       styles: {
@@ -77,7 +77,7 @@ export class BannerComponent implements OnInit {
     },
 
     {
-      header: 'El Tiempo Es Todo',
+      header: 'El tiempo es todo',
       subheader: '',
       paragraph: 'Conócenos, te invitamos a vivir una historia + un café',
       styles: {
