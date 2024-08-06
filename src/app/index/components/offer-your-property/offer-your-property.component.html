@@ -1,13 +1,13 @@
-<!-- Offer Your Property -->
-<section class="py-16 bg-blue-500 relative">
+<!-- Offer Your Property Section-4 -->
+<section class="row-span-2 bg-cover bg-center h-96 bg-[url('assets/images/section-4/imagen-fondo-sección-4.jpg')]">
     <div class="absolute inset-0 bg-black opacity-50"></div>
     <div class="container mx-auto relative z-10">
         <div class="text-center mb-8">
             <div>
-                <h5 class="text-yellow-vista text-lg font-bold">PLAN REFERIDOS</h5>
-                <h3 class="text-white font-bold text-3xl">Oferta tu inmueble con nosotros</h3>
+                <h5 class="text-yellow-vista font-bold p-4 text-2xl">PLAN REFERIDOS</h5>
+                <h3 class="text-white font-bold text-xl">Oferta tu inmueble con nosotros</h3>
             </div>
-            <hr class="border-yellow-vista my-4 mx-auto w-2/12">            
+            <hr class="border-yellow-vista border-2 my-4 mx-auto w-2/12">
             <div>
                 <p class="text-white mt-4 px-56">Con este formulario buscamos acercar a Vista Inmobiliaria a un mercado competitivo, conservando los valores coorporativos de la misma empresa, y respetando los derechos y deberes de nuestros clientes.</p>
             </div>
@@ -15,43 +15,43 @@
         <form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-28" action="https://formspree.io/f/xyyljanv" method="POST">
             <div>
                 <div class="mb-4">
-                    <input type="text" name="nombre" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Nombre">
+                    <input type="text" name="nombre" class="w-full p-3 border border-white focus:outline-none focus:border-white bg-transparent text-white placeholder-white" placeholder="Nombre">
+
                 </div>
             </div>
             <div>
                 <div class="mb-4">
-                    <input type="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Correo Electrónico">
+                    <input type="email" name="email" class="w-full p-3 border border-white focus:outline-none focus:border-white bg-transparent text-white placeholder-white" placeholder="Correo Electrónico">
                 </div>
             </div>
             <div>
                 <div class="mb-4">
-                    <input type="text" name="telefono" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Número Telefónico">
+                    <input type="text" name="telefono" class="w-full p-3 border border-white focus:outline-none focus:border-white bg-transparent text-white placeholder-white" placeholder="Número Telefónico">
                 </div>
             </div>
             <div>
                 <div class="mb-4">
-                    <select class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                        <option>Seleccione su ciudad</option>
-                        <option>Manizales</option>
-                        <option>Pereira</option>
-                        <option>Bogotá</option>
-                        <option>Medellín</option>                            
+                    <select class="w-full p-3 border focus:outline-none border-white focus:border-white bg-transparent text-white">
+                        <option class="text-black">Seleccione su Barrio</option>
+                        <option *ngFor="let Neighborhoods of Neighborhoods" class="text-black">{{ Neighborhoods }}</option>
                     </select>
                 </div>
             </div>
             <div>
                 <div class="mb-4">
-                    <select class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
-                        <option>Tipo de Negocio</option>
-                        <option>Arrendamiento</option>
-                        <option>Venta</option>
-                        <option>Permuta</option>                            
+                    <select class="w-full p-3 border focus:outline-none border-white focus:border-white bg-transparent text-white">
+                        <option class="text-black">Tipo de Negocio</option>
+                        <option *ngFor="let business of business" class="text-black border-yellow-vista">{{ business }}</option>
                     </select>
                 </div>
             </div>
             <div>
                 <div class="mb-4">
-                    <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Enviar</button>
+                    <!--<button type="submit" class="w-full py-3  border focus:outline-none border-yellow-vista focus:border-white bg-gradient-to-r from-yellow-vista to-transparent first-line:  text-white">Enviar</button> -->
+                    <button type="submit" class="relative w-full py-3 border focus:outline-none border-yellow-vista focus:border-white bg-transparent text-white">
+                      <div class="absolute top-0 left-0 h-full w-1/6 bg-yellow-vista"></div>
+                      Enviar
+                    </button>
                 </div>
             </div>
         </form>
