@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AdditionalProductsComponent {
 
+  public isAccordionOpen = false;
+
 }
