@@ -1,0 +1,13 @@
+.degrade {
+  position: relative;
+}
+
+.degrade::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%; /* Ajusta esto según cuánto espacio quieras cubrir con el degradado */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
