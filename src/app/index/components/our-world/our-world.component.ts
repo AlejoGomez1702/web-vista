@@ -30,4 +30,5 @@ export class OurWorldComponent implements AfterViewInit {
     prevButton?.addEventListener('click', scrollPrev);
     nextButton?.addEventListener('click', scrollNext);
   }
+
 }

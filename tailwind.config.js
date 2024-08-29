@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         'black-vista': '#333333',
-        'yellow-vista': '#ffb600'
+        'yellow-vista': '#ffb600',
+        'blue-necesary': '#080824'
       },
       borderRadius: {
         't-vista': '7rem 7rem 0 0'
