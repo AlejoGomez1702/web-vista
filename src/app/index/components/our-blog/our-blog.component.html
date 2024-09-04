@@ -1,72 +1,98 @@
-<section class="py-16 bg-blue-500 relative">
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <div class="container mx-auto relative z-10">
-        <div class="relative text-center mb-8">
-          <!-- Left Button -->
-          <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
-            &#9664;
-          </button>
-        
-          <div>
-            <h5 class="text-yellow-vista text-lg font-bold">NUESTRO BLOG</h5>
-            <h3 class="text-white font-bold text-3xl">Visita nuestro contenido de valor</h3>
-          </div>
-          <hr class="border-yellow-vista my-4 mx-auto w-2/12">
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
 
-          <div>
-            <p class="text-white mt-4 px-56">
-                En nuestro blog encontrarás contenido destacado, con el fin de mantenerte informado y actualizado con las últimas novedades en el sector inmobiliario.
-            </p>
-          </div>
-        
-          <!-- Right Button -->
-          <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
-            &#9654;
-          </button>
-        </div>
 
-        <!-- Contenedor para centrar las tarjetas -->
-        <div class="flex justify-center">
-            <div class="flex gap-4 max-w-5xl">
-                <!-- Card 1 -->
-                <div class="bg-cover bg-center w-1/4 h-64 p-4" style="background-image: url('https://placehold.co/500');">
-                    <div class="flex flex-col justify-between h-full">
-                    <div class="text-yellow-500">
-                        <h3 class="text-lg font-bold">Título de la Tarjeta 1</h3>
-                        <p>Este es el contenido de la tarjeta 1.</p>
-                    </div>
-                    <div class="text-yellow-500">
-                        <p>Footer de la tarjeta 1</p>
-                    </div>
-                    </div>
-                </div>
-            
-                <!-- Card 2 -->
-                <div class="bg-cover bg-center w-1/4 h-64 p-4" style="background-image: url('https://placehold.co/500');">
-                    <div class="flex flex-col justify-between h-full">
-                    <div class="text-yellow-500">
-                        <h3 class="text-lg font-bold">Título de la Tarjeta 2</h3>
-                        <p>Este es el contenido de la tarjeta 2.</p>
-                    </div>
-                    <div class="text-yellow-500">
-                        <p>Footer de la tarjeta 2</p>
-                    </div>
-                    </div>
-                </div>
-            
-                <!-- Card 3 -->
-                <div class="bg-cover bg-center w-1/4 h-64 p-4" style="background-image: url('https://placehold.co/500');">
-                    <div class="flex flex-col justify-between h-full">
-                    <div class="text-yellow-500">
-                        <h3 class="text-lg font-bold">Título de la Tarjeta 3</h3>
-                        <p>Este es el contenido de la tarjeta 3.</p>
-                    </div>
-                    <div class="text-yellow-500">
-                        <p>Footer de la tarjeta 3</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="text-center mb-12">
+      <h5 class="text-yellow-vista text-lg font-semibold">Nuestro Blog</h5>
+      <h3 class="text-3xl font-bold text-gray-800 mt-2">Visita nuestro contenido de valor</h3>
+      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+        En nuestro Blog encontrarás nuestro contenido destacado, con el fin de mantenerte informado y actualizado con las últimas novedades en el sector inmobiliario.
+      </p>
     </div>
+
+    <div class="relative flex justify-center items-center">
+
+      <!-- <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 p-3 rounded-full shadow-md hover:bg-gray-100 focus:outline-none" id="prevButton">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 p-3 rounded-full shadow-md hover:bg-gray-100 focus:outline-none" id="nextButton">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button> -->
+
+      <div class="flex overflow-x-auto scroll-smooth gap-6 py-4 px-2 max-w-5xl mx-auto" id="blogSlider">
+        <div class="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
+          <div class="h-48 bg-cover bg-center shadow-lg transform hover:scale-105 transition duration-300" style="background-image: url('assets/images/homepage-1/blogDetox.jpg');"></div>
+          <div class="p-6 pb-20">
+            <div class="flex items-center text-gray-500 text-sm mb-2">
+              <span>25 Feb 2021</span>
+              <span class="mx-2">•</span>
+              <span class="text-yellow-vista">Blog</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Haz un DÉTOX dentro de tu hogar</h3>
+            <p class="text-gray-600 mb-4">
+              Tu hogar puede necesitar una pequeña desintoxicación de todo aquello que lo puede hacer sentir así.
+            </p>
+            <div class="absolute bottom-6 left-6 right-6 flex items-center"> <!-- Posición absoluta y flexbox -->
+              <img src="assets/images/homepage-1/admin-1-40x40.jpg" alt="Author" class="w-10 h-10 rounded-full mr-3">
+              <div>
+                <p class="text-gray-800 font-semibold">Mercadeo</p>
+                <a href="https://vistainmobiliaria.inmo.co/blog/haz-un-detox-dentro-de-tu-hogar/14441?page=1" target="_blank" class="inline-block mt-2 text-yellow-vista font-semibold hover:underline">LEER MÁS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
+          <div class="h-48 bg-cover bg-center shadow-lg transform hover:scale-105 transition duration-300" style="background-image: url('assets/images/homepage-1/blogSubsidio.jpg');"></div>
+          <div class="p-6 pb-20">
+            <div class="flex items-center text-gray-500 text-sm mb-2">
+              <span>05 Nov 2020</span>
+              <span class="mx-2">•</span>
+              <span class="text-yellow-vista">Blog</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Conozca todo sobre los nuevos subsidios de vivienda</h3>
+            <p class="text-gray-600 mb-4">
+              Desliza y conoce un poco más sobre los subsidios del gobierno, o visita nuestra página web en la sección blog, encontrarás más información.
+            </p>
+            <div class="absolute bottom-6 left-6 right-6 flex items-center"> <!-- Posición absoluta y flexbox -->
+              <img src="assets/images/homepage-1/admin-1-40x40.jpg" alt="Author" class="w-10 h-10 rounded-full mr-3">
+              <div>
+                <p class="text-gray-800 font-semibold">Mercadeo</p>
+                <a href="https://vistainmobiliaria.inmo.co/blog/conozca-todo-sobre-los-nuevos-subsidios-de-vivienda/13418?page=1" target="_blank" class="inline-block mt-2 text-yellow-vista font-semibold hover:underline">LEER MÁS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
+          <div class="h-48 bg-cover bg-center shadow-lg transform hover:scale-105 transition duration-300" style="background-image: url('assets/images/homepage-1/blogOrden.jpg');"></div>
+          <div class="p-6 pb-20">
+            <div class="flex items-center text-gray-500 text-sm mb-2">
+              <span>21 Oct 2020</span>
+              <span class="mx-2">•</span>
+              <span class="text-yellow-vista">Blog</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">La magia del orden</h3>
+            <p class="text-gray-600 mb-4">
+              Buscamos tener un día de recomendados en muchos aspectos de la vida, tanto personal, como familiar; Compartiremos algunos tips, artículos o perfiles de personajes que nos pueden aportar en ese crecimiento.
+            </p>
+            <div class="absolute bottom-6 left-6 right-6 flex items-center"> <!-- Posición absoluta y flexbox -->
+              <img src="assets/images/homepage-1/admin-1-40x40.jpg" alt="Author" class="w-10 h-10 rounded-full mr-3">
+              <div>
+                <p class="text-gray-800 font-semibold">Mercadeo</p>
+                <a href="https://vistainmobiliaria.inmo.co/blog/la-magia-del-orden/13291?page=1" target="_blank" class="inline-block mt-2 text-yellow-vista font-semibold hover:underline">LEER MÁS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </section>
+
+
