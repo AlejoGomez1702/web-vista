@@ -1,42 +1,49 @@
 <section class="py-16 bg-gray-100">
   <div class="container mx-auto px-4">
+    <div class="relative text-center mb-12">
+      <!-- Botón Izquierdo -->
+      <button id="carouselPrev" class="z-30 absolute inset-y-0 flex items-center justify-center left-0 mr-8 ml-[235px]">
+        <div class="boton-transicion-l inline-block p-1 shadow-md border-2 border-blue-necesary border-r-[5px]">
+          <svg class="w-[30px] h-[30px] text-gray-800 dark:text-yellow-vista" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+          </svg>
+        </div>
+      </button>
 
+      <!-- Contenido de Texto -->
+      <div>
+        <h5 class="text-yellow-vista text-lg font-semibold">Nuestro Blog</h5>
+        <h3 class="text-3xl font-bold text-gray-800 mt-2">Visita nuestro contenido de valor</h3>
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+          En nuestro Blog encontrarás nuestro contenido destacado, con el fin de mantenerte informado y actualizado con las últimas novedades en el sector inmobiliario.
+        </p>
+      </div>
 
-    <div class="text-center mb-12">
-      <h5 class="text-yellow-vista text-lg font-semibold">Nuestro Blog</h5>
-      <h3 class="text-3xl font-bold text-gray-800 mt-2">Visita nuestro contenido de valor</h3>
-      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-        En nuestro Blog encontrarás nuestro contenido destacado, con el fin de mantenerte informado y actualizado con las últimas novedades en el sector inmobiliario.
-      </p>
+      <!-- Botón Derecho -->
+      <button id="carouselNext" class="z-30 absolute inset-y-0 flex items-center justify-center right-0 mr-[235px] ml-8">
+        <div class="boton-transicion-r inline-block p-1 shadow-md border-2 border-yellow-vista border-l-[5px]">
+          <svg class="w-[30px] h-[30px] text-gray-800 dark:text-yellow-vista dark:hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+          </svg>
+        </div>
+      </button>
     </div>
 
+    <!-- Carrusel -->
     <div class="relative flex justify-center items-center">
-
-      <!-- <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 p-3 rounded-full shadow-md hover:bg-gray-100 focus:outline-none" id="prevButton">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 p-3 rounded-full shadow-md hover:bg-gray-100 focus:outline-none" id="nextButton">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button> -->
-
       <div class="flex overflow-x-auto scroll-smooth gap-6 py-4 px-2 max-w-5xl mx-auto" id="blogSlider">
-        <div class="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
+        <div class="flex-shrink-0 w-80 bg-white shadow-lg overflow-hidden relative">
+          <div class="absolute top-2 right-0 bg-yellow-400 text-gray-800 p-2 z-10">25 Feb 2021</div>
           <div class="h-48 bg-cover bg-center shadow-lg transform hover:scale-105 transition duration-300" style="background-image: url('assets/images/homepage-1/blogDetox.jpg');"></div>
           <div class="p-6 pb-20">
             <div class="flex items-center text-gray-500 text-sm mb-2">
-              <span>25 Feb 2021</span>
-              <span class="mx-2">•</span>
-              <span class="text-yellow-vista">Blog</span>
+              <span class="font-bold text-white bg-yellow-vista p-2">Blog</span>
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mb-2">Haz un DÉTOX dentro de tu hogar</h3>
             <p class="text-gray-600 mb-4">
               Tu hogar puede necesitar una pequeña desintoxicación de todo aquello que lo puede hacer sentir así.
             </p>
-            <div class="absolute bottom-6 left-6 right-6 flex items-center"> <!-- Posición absoluta y flexbox -->
+            <div class="absolute bottom-6 left-6 right-6 flex items-center">
               <img src="assets/images/homepage-1/admin-1-40x40.jpg" alt="Author" class="w-10 h-10 rounded-full mr-3">
               <div>
                 <p class="text-gray-800 font-semibold">Mercadeo</p>
@@ -46,19 +53,18 @@
           </div>
         </div>
 
-        <div class="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
+        <div class="flex-shrink-0 w-80 bg-white shadow-lg overflow-hidden relative">
+          <div class="absolute top-2 right-0 bg-yellow-400 text-gray-800 p-2 z-10">05 Nov 2020</div>
           <div class="h-48 bg-cover bg-center shadow-lg transform hover:scale-105 transition duration-300" style="background-image: url('assets/images/homepage-1/blogSubsidio.jpg');"></div>
           <div class="p-6 pb-20">
             <div class="flex items-center text-gray-500 text-sm mb-2">
-              <span>05 Nov 2020</span>
-              <span class="mx-2">•</span>
-              <span class="text-yellow-vista">Blog</span>
+              <span class="font-bold text-white bg-yellow-vista p-2">Blog</span>
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mb-2">Conozca todo sobre los nuevos subsidios de vivienda</h3>
             <p class="text-gray-600 mb-4">
               Desliza y conoce un poco más sobre los subsidios del gobierno, o visita nuestra página web en la sección blog, encontrarás más información.
             </p>
-            <div class="absolute bottom-6 left-6 right-6 flex items-center"> <!-- Posición absoluta y flexbox -->
+            <div class="absolute bottom-6 left-6 right-6 flex items-center">
               <img src="assets/images/homepage-1/admin-1-40x40.jpg" alt="Author" class="w-10 h-10 rounded-full mr-3">
               <div>
                 <p class="text-gray-800 font-semibold">Mercadeo</p>
@@ -68,19 +74,18 @@
           </div>
         </div>
 
-        <div class="flex-shrink-0 w-80 bg-white rounded-lg shadow-lg overflow-hidden relative">
+        <div class="flex-shrink-0 w-80 bg-white shadow-lg overflow-hidden relative">
+          <div class="absolute top-2 right-0 bg-yellow-400 text-gray-800 p-2 z-10">21 Oct 2020</div>
           <div class="h-48 bg-cover bg-center shadow-lg transform hover:scale-105 transition duration-300" style="background-image: url('assets/images/homepage-1/blogOrden.jpg');"></div>
           <div class="p-6 pb-20">
             <div class="flex items-center text-gray-500 text-sm mb-2">
-              <span>21 Oct 2020</span>
-              <span class="mx-2">•</span>
-              <span class="text-yellow-vista">Blog</span>
+              <span class="font-bold text-white bg-yellow-vista p-2">Blog</span>
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mb-2">La magia del orden</h3>
             <p class="text-gray-600 mb-4">
               Buscamos tener un día de recomendados en muchos aspectos de la vida, tanto personal, como familiar; Compartiremos algunos tips, artículos o perfiles de personajes que nos pueden aportar en ese crecimiento.
             </p>
-            <div class="absolute bottom-6 left-6 right-6 flex items-center"> <!-- Posición absoluta y flexbox -->
+            <div class="absolute bottom-6 left-6 right-6 flex items-center">
               <img src="assets/images/homepage-1/admin-1-40x40.jpg" alt="Author" class="w-10 h-10 rounded-full mr-3">
               <div>
                 <p class="text-gray-800 font-semibold">Mercadeo</p>
@@ -94,5 +99,3 @@
     </div>
   </div>
 </section>
-
-

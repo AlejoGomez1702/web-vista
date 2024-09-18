@@ -1,0 +1,43 @@
+
+.boton-transicion-r {
+  position: relative;
+  overflow: hidden;
+}
+
+.boton-transicion-r::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#ffb600;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
+  z-index:-1;
+}
+
+.boton-transicion-r:hover::after {
+  transform: translateX(0);
+}
+.boton-transicion-l {
+  position: relative;
+  overflow: hidden;
+}
+
+.boton-transicion-l::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#080824;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-out;
+  z-index:-1;
+}
+
+.boton-transicion-l:hover::after {
+  transform: translateX(0);
+}
